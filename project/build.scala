@@ -41,12 +41,12 @@ object HDF5 extends sbt.Build {
                         </license>
                     </licenses>
                     <scm>
-                        <url>http://www.hdfgroup.org/ftp/HDF5/hdf-java/src/</url>
+                        <url>git@github.com:saddle/jhdf5.git</url>
                     </scm>
                     <developers>
                       <developer>
-                        <id>ncsa</id>
-                        <name>NCSA</name>
+                        <id>HDF Group</id>
+                        <name>HDF Group</name>
                         <url>http://www.hdfgroup.org/HDF5/</url>
                       </developer>
                     </developers>
