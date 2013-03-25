@@ -25,8 +25,7 @@ object HDF5 extends sbt.Build {
     Project(id = "jhdf5",
             base = file("."),
             settings = Project.defaultSettings ++ Seq(
-                scalaVersion := "2.9.2",
-                crossScalaVersions := Seq("2.9.2", "2.10.0"),
+                crossPaths := false,
                 organization := "org.scala-saddle",
                 publishMavenStyle := true,
                 publishArtifact in Test := false,
