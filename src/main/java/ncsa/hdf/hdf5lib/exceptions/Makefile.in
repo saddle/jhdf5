@@ -1,0 +1,58 @@
+#/****************************************************************************
+# * Copyright by The HDF Group.                                               *
+# * Copyright by the Board of Trustees of the University of Illinois.         *
+# * All rights reserved.                                                      *
+# *                                                                           *
+# * This file is part of HDF Java Products. The full HDF Java copyright       *
+# * notice, including terms governing use, modification, and redistribution,  *
+# * is contained in the file, COPYING.  COPYING can be found at the root of   *
+# * the source code distribution tree. You can also access it online  at      *
+# * http://www.hdfgroup.org/products/licenses.html.  If you do not have       *
+# * access to the file, you may request a copy from help@hdfgroup.org.        *
+# ****************************************************************************/
+ 
+TOP = ../../../..
+DIR	= ncsa/hdf/hdf5lib/exceptions
+SUBDIRS = NULL
+
+JAVAC           = @JAVAC@
+JAVADOC         = @JAVADOC@
+JAR         	= @JAR@
+FIND            = @FIND@
+RM              = @RM@
+SLEXT=@SLEXT@
+JSLEXT=@JSLEXT@
+
+CLASSPATH=@CLASSPATH@
+JH45INSTALLDIR=@JH45INST@
+H45INC=@H45INC@
+H4INC=@HDF4INC@
+H5INC=@HDF5INC@
+
+JAVA_SRCS = \
+HDF5AtomException.java  \
+HDF5AttributeException.java  \
+HDF5BtreeException.java  \
+HDF5DataFiltersException.java  \
+HDF5DataStorageException.java  \
+HDF5DatasetInterfaceException.java  \
+HDF5DataspaceInterfaceException.java  \
+HDF5DatatypeInterfaceException.java  \
+HDF5Exception.java  \
+HDF5ExternalFileListException.java  \
+HDF5FileInterfaceException.java  \
+HDF5FunctionArgumentException.java  \
+HDF5FunctionEntryExitException.java  \
+HDF5HeapException.java  \
+HDF5InternalErrorException.java  \
+HDF5JavaException.java  \
+HDF5LibraryException.java  \
+HDF5LowLevelIOException.java  \
+HDF5MetaDataCacheException.java  \
+HDF5ObjectHeaderException.java  \
+HDF5PropertyListInterfaceException.java  \
+HDF5ReferenceException.java  \
+HDF5ResourceUnavailableException.java  \
+HDF5SymbolTableException.java
+
+include $(TOP)/config/Rules.mk
