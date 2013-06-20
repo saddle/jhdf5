@@ -54,6 +54,10 @@ object HDF5 extends sbt.Build {
                     "Sonatype OSS Releases" at "http://oss.sonatype.org/content/repositories/releases/",
                     "Sonatype OSS Snapshots" at "http://oss.sonatype.org/content/repositories/snapshots/"
                 ),
+                libraryDependencies <++= scalaVersion (v => Seq(
+                  "junit" % "junit" % "4.7" % "test",
+                  "com.novocode" % "junit-interface" % "0.8" % "test->default"
+                )),
                 version := "2.9",
                 publishTo <<= (version) { version: String =>
                     val nexus = "https://oss.sonatype.org/"
